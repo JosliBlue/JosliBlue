@@ -21,12 +21,15 @@
     <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 225px>
 </picture>
 
-🎂 Hi! I'm 22 years old<br>
-🎓 I'm a **Software Engineering student**<br>
-☕ I started my journey as a developer by learning **Java**, and I've been growing ever since<br>
-🚀 “I always strive to improve my skills”<br>
-❤️ I'm currently passionate about web development, especially the **Backend developer**<br>
-🎯 My goals: to **improve as a developer** and find **new job opportunities**.
+As an undergraduate Software Engineering student, I love learning and creating new, productive, innovative, and meaningful things.
+
+My interests are strongly aligned with web development—especially backend architecture—and building useful, impactful software solutions.
+
+🌱 I’m currently learning ...
+  - Mobile app development  
+  - Docker  
+
+Outside tech, 🎮 I enjoy playing shooting games, 🎹 practicing the piano, 🎬 watching movies, and 🎵 listening to music.
 
 <br>
 
@@ -39,11 +42,11 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Languages
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=java" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=php" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=js" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=ts" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=python" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=java" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=php" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=js" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=ts" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=python" />
         </td>
     </tr>
     <tr>
@@ -51,11 +54,11 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Frameworks
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=spring" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=laravel" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=angular" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=bootstrap" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=tailwind" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=spring" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=laravel" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=angular" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=bootstrap" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=tailwind" />
         </td>
     </tr>
     <tr>
@@ -63,9 +66,9 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Databases
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=mysql" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postgres" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=firebase" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=mysql" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postgres" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=firebase" />
         </td>
     </tr>
     <tr>
@@ -73,12 +76,12 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Other Tools
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=vscode" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=idea" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=pycharm" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=github" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postman" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=docker" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=vscode" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=idea" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=pycharm" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=git" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postman" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=docker" />
         </td>
     </tr>
 </table>
@@ -93,30 +96,14 @@
 <!--------------------------- STATS -------------------------->
 ## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZGhxNnBwdm9sajE3bGcxdGFhYTR6d3ZuZmQyNDBmOGk5aGNodzByMiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Dzb7MRwMuV9xOnywTx/giphy.gif" width = 30px></picture> Stats
 
-<p align='center'>
-<a><picture >
-    <source
-        srcset="https://github-readme-stats.vercel.app/api?username=JosliBlue&show_icons=true&theme=github_dark&hide_border=true" media="(prefers-color-scheme: dark)"
-    />
-    <source
-        srcset="https://github-readme-stats.vercel.app/api?username=JosliBlue&show_icons=true" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-    />
-    <img src="https://github-readme-stats.vercel.app/api?username=JosliBlue&show_icons=true" />
-</picture></a>
-<a><picture >
-    <source
-        srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JosliBlue&hide_progress=true&hide=javascript&theme=github_dark&hide_border=true" media="(prefers-color-scheme: dark)"
-    />
-    <source
-        srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JosliBlue&hide_progress=true&hide=javascript" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-    />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JosliBlue" />
-</picture></a>
-</p>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JosliBlue&bg_color=0d1117&color=58a6ff&line=4b8eda&point=e8edf3&area_color=FFFFFF&title_color=58a6ff&area=true&hide_border=true" alt="JosliBlue's Contribution Graph"/>
+<div align="center">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=JosliBlue&theme=github_dark" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JosliBlue&theme=github_dark" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JosliBlue&theme=github_dark" />
+</div>
 
 <br>
+
 
 <!------------------------- PARTNERS ------------------------->
 ## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d25nMzdtOXNxcjRuYjZvbWJtZDc5d2VweGU4ZG45MmlnMGExYTZqbiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/3n1O5MZSrfeQR7EkoS/giphy.gif" width = 35px></picture> Partners
