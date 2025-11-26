@@ -21,12 +21,15 @@
     <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 225px>
 </picture>
 
-🎂 Hi! I'm 22 years old<br>
-🎓 I'm a **Software Engineering student**<br>
-☕ I started my journey as a developer by learning **Java**, and I've been growing ever since<br>
-🚀 “I always strive to improve my skills”<br>
-❤️ I'm currently passionate about web development, especially the **Backend developer**<br>
-🎯 My goals: to **improve as a developer** and find **new job opportunities**.
+As an undergraduate Software Engineering student, I love learning and creating new, productive, innovative, and meaningful things.
+
+My interests are strongly aligned with web development—especially backend architecture—and building useful, impactful software solutions.
+
+🌱 I’m currently learning ...
+  - Mobile app development  
+  - Docker  
+
+Outside tech, 🎮 I enjoy playing shooting games, 🎹 practicing the piano, 🎬 watching movies, and 🎵 listening to music.
 
 <br>
 
