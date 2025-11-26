@@ -94,12 +94,12 @@
 ## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZGhxNnBwdm9sajE3bGcxdGFhYTR6d3ZuZmQyNDBmOGk5aGNodzByMiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Dzb7MRwMuV9xOnywTx/giphy.gif" width = 30px></picture> Stats
 
 <p align='center'>
+
 <a><img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=JosliBlue&theme=github_dark" /></a>
 <a><img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JosliBlue&theme=github_dark" /></a>
 <a><img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JosliBlue&theme=github_dark" /></a>
-</p>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JosliBlue&bg_color=0d1117&color=58a6ff&line=4b8eda&point=e8edf3&area_color=FFFFFF&title_color=58a6ff&area=true&hide_border=true" alt="JosliBlue's Contribution Graph"/>
+</p>
 
 <br>
 
