@@ -39,11 +39,11 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Languages
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=java" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=php" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=js" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=ts" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=python" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=java" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=php" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=js" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=ts" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=python" />
         </td>
     </tr>
     <tr>
@@ -51,11 +51,11 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Frameworks
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=spring" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=laravel" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=angular" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=bootstrap" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=tailwind" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=spring" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=laravel" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=angular" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=bootstrap" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=tailwind" />
         </td>
     </tr>
     <tr>
@@ -63,9 +63,9 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Databases
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=mysql" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postgres" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=firebase" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=mysql" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postgres" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=firebase" />
         </td>
     </tr>
     <tr>
@@ -73,12 +73,12 @@
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Other Tools
             </p>
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=vscode" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=idea" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=pycharm" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=github" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postman" />
-            <img height="50" style="pointer-events: none;" src="https://skillicons.dev/icons?i=docker" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=vscode" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=idea" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=pycharm" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=git" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postman" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=docker" />
         </td>
     </tr>
 </table>
