@@ -93,15 +93,14 @@
 <!--------------------------- STATS -------------------------->
 ## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZGhxNnBwdm9sajE3bGcxdGFhYTR6d3ZuZmQyNDBmOGk5aGNodzByMiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Dzb7MRwMuV9xOnywTx/giphy.gif" width = 30px></picture> Stats
 
-<p align='center'>
-
-<a><img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=JosliBlue&theme=github_dark" /></a>
-<a><img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JosliBlue&theme=github_dark" /></a>
-<a><img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JosliBlue&theme=github_dark" /></a>
-
-</p>
+<div align="center">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=JosliBlue&theme=github_dark" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JosliBlue&theme=github_dark" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JosliBlue&theme=github_dark" />
+</div>
 
 <br>
+
 
 <!------------------------- PARTNERS ------------------------->
 ## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d25nMzdtOXNxcjRuYjZvbWJtZDc5d2VweGU4ZG45MmlnMGExYTZqbiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/3n1O5MZSrfeQR7EkoS/giphy.gif" width = 35px></picture> Partners
