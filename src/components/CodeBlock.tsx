@@ -60,8 +60,8 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) =
     };
 
     return (
-        <div className="rounded-md overflow-hidden border border-[var(--code-border)] bg-[var(--bg-code)] my-6 shadow-sm group relative">
-            <div className="flex justify-end items-center px-4 py-2 bg-[var(--code-header-bg)] border-b border-[var(--code-border)]">
+        <div className="rounded-md overflow-hidden border border-(--code-border) bg-(--bg-code) my-6 shadow-sm group relative">
+            <div className="flex justify-end items-center px-4 py-2 bg-(--code-header-bg) border-b border-(--code-border)">
                 <div className="flex items-center gap-2">
                     <span className="text-xs text-text-secondary font-mono font-medium tracking-tight">
                         200 OK

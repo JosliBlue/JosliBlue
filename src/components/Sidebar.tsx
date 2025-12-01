@@ -61,11 +61,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
                                     <span
                                         className={`text-[10px] font-mono font-bold px-2 py-1 rounded border transition-colors ${
                                             item.method === 'GET'
-                                                ? 'bg-[var(--badge-get-bg)] text-[var(--badge-get-text)] border-[var(--badge-get-border)]'
+                                                ? 'bg-(--badge-get-bg) text-(--badge-get-text) border-(--badge-get-border)'
                                                 : ''
                                         } ${
                                             item.method === 'POST'
-                                                ? 'bg-[var(--badge-post-bg)] text-[var(--badge-post-text)] border-[var(--badge-post-border)]'
+                                                ? 'bg-(--badge-post-bg) text-(--badge-post-text) border-(--badge-post-border)'
                                                 : ''
                                         }`}
                                     >
