@@ -1,20 +1,95 @@
 ---
-import '../styles/global.css';
+import Layout from "../layouts/layout.astro";
+import { Icon } from "@iconify/react";
+
+const welcomeResponse = {
+    username: "JosliBlue",
+    data: {
+        role: "Backend Developer",
+        realname: "Jose Elias Muyulema Pungaña",
+    },
+    skills: {
+        languages: ["Java", "PHP", "JavaScript", "TypeScript", "Python"],
+        frameworks: ["Spring", "Laravel", "Angular", "Bootstrap", "Tailwind"],
+        databases: ["MySQL", "PostgreSQL", "Firebase"],
+    },
+    hobbies: ["Shooting Games", "Piano", "Movies", "Music"],
+};
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Pagina principal</title>
-    </head>
-    <body>
-        <h1>Nuevo giga portafolio</h1>
-    </body>
-    <!--
-		git commit -m "Actualizar documentación [skip ci]"
-		Al poner [skip ci], Netlify ignorará ese cambio y no gastarás créditos.
-	-->
-</html>
+<Layout title="Welcome">
+    <div class="space-y-6">
+        <div class="flex flex-col-reverse md:flex-row gap-6 items-center">
+            <div class="flex-1">
+                <h1 class="text-4xl font-extrabold text-text-primary mb-2">Hello World!</h1>
+                <p class="text-text-secondary text-lg mb-6">
+                    Welcome to the interactive documentation for <span class="text-accent font-mono"
+                        >JosliBlue</span
+                    >. This API provides programmatic access to my skills, experience, and projects.
+                </p>
+
+                <div class="flex flex-wrap gap-3">
+                    <a
+                        href="https://github.com/JosliBlue"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 px-4 py-2 rounded-md bg-bg-secondary border border-border text-text-secondary hover:text-text-primary hover:border-accent transition-all group"
+                    >
+                        <Icon
+                            icon="mdi:github"
+                            width="20"
+                            height="20"
+                            className="group-hover:text-accent transition-colors"
+                            client:load
+                        />
+                        <span class="font-mono text-sm">GitHub</span>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jose-elias-muyulema-punga%C3%B1a/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 px-4 py-2 rounded-md bg-bg-secondary border border-border text-text-secondary hover:text-text-primary hover:border-accent transition-all group"
+                    >
+                        <Icon
+                            icon="mdi:linkedin"
+                            width="20"
+                            height="20"
+                            className="group-hover:text-accent transition-colors"
+                            client:load
+                        />
+                        <span class="font-mono text-sm">LinkedIn</span>
+                    </a>
+                    <a
+                        href="/cv.pdf"
+                        download
+                        class="flex items-center gap-2 px-4 py-2 rounded-md bg-bg-secondary border border-border text-text-secondary hover:text-text-primary hover:border-accent transition-all group"
+                    >
+                        <Icon
+                            icon="mdi:file-document-outline"
+                            width="20"
+                            height="20"
+                            className="group-hover:text-accent transition-colors"
+                            client:load
+                        />
+                        <span class="font-mono text-sm">Download CV</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:block md:h-auto aspect-square flex-shrink-0">
+                <img
+                    src="https://avatars.githubusercontent.com/u/129903903"
+                    alt="Profile Picture"
+                    class="w-full h-full object-cover rounded-full border-2 border-accent shadow-lg"
+                />
+            </div>
+        </div>
+
+        <div class="prose prose-invert max-w-none">
+            <p>
+                This portfolio is designed to look and feel like a modern backend documentation
+                tool. You can explore the different "endpoints" in the sidebar to learn more about
+                me.
+            </p>
+        </div>   
+    </div>
+</Layout>
