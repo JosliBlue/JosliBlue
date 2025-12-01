@@ -49,7 +49,11 @@ export const Endpoint: React.FC<EndpointProps> = ({
                 className="flex items-center gap-4 p-4 cursor-pointer hover:bg-white/5 transition-colors border-b border-border/50"
                 onClick={() => setOpen(!open)}
             >
-                <button className="text-text-secondary hover:text-text-primary">
+                <button 
+                    type="button"
+                    aria-label={open ? "Collapse endpoint" : "Expand endpoint"}
+                    className="text-text-secondary hover:text-text-primary"
+                >
                     {open ? (
                         <Icon icon="mdi:chevron-down" width="20" height="20" />
                     ) : (

@@ -102,7 +102,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
 
             {/* Mobile Bottom Toggle */}
             <button
+                type="button"
                 onClick={toggleMenu}
+                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMobileMenuOpen}
                 className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 p-4 rounded-full bg-accent text-bg-primary shadow-lg hover:scale-110 transition-transform duration-200"
             >
                 {isMobileMenuOpen ? (
