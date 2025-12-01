@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/layout.astro';
+import { Endpoint } from '../components/Endpoint';
+import { CodeBlock } from '../components/CodeBlock';
+import { Icon } from '@iconify/react';
+
+const welcomeResponse = {
+    username: 'JosliBlue',
+    data: {
+        role: 'Backend Developer',
+        realname: 'Jose Elias Muyulema Pungaña',
+    },
+    skills: {
+        languages: ['Java', 'PHP', 'JavaScript', 'TypeScript', 'Python'],
+        frameworks: ['Spring', 'Laravel', 'Angular', 'Bootstrap', 'Tailwind'],
+        databases: ['MySQL', 'PostgreSQL', 'Firebase'],
+    },
+    hobbies: ['Shooting Games', 'Piano', 'Movies', 'Music'],
+};
+
+const skillIcons = {
+    Java: 'devicon:java',
+    PHP: 'devicon:php',
+    JavaScript: 'devicon:javascript',
+    TypeScript: 'devicon:typescript',
+    Python: 'devicon:python',
+    Spring: 'devicon:spring',
+    Laravel: 'devicon:laravel',
+    Angular: 'devicon:angular',
+    Bootstrap: 'devicon:bootstrap',
+    Tailwind: 'devicon:tailwindcss',
+    MySQL: 'devicon:mysql',
+    PostgreSQL: 'devicon:postgresql',
+    Firebase: 'devicon:firebase',
+};
+---
+
+<Layout title="Welcome">
+    <div class="space-y-6">
+        <div class="flex flex-col-reverse md:flex-row gap-6 items-center">
+            <div class="flex-1">
+                <h1 class="text-4xl font-extrabold text-text-primary mb-6">Hello World!</h1>
+                <div class="prose prose-invert max-w-none text-text-secondary text-lg mb-6">
+                    <p class="mb-3">
+                        I'm José! or also <span class="text-accent font-mono">JosliBlue</span>. I
+                        started programming in high school when I was 16 years old and currently I
+                        have focused on Backend development.
+                    </p>
+                    <p>
+                        One of my recent jobs was at an institution in my city, where I worked
+                        together with colleagues to facilitate access to culture and art through
+                        technological solutions.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a
+                        href="https://github.com/JosliBlue"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 px-4 py-2 rounded-md bg-bg-secondary border border-border text-text-secondary hover:text-text-primary hover:border-accent transition-all group"
+                    >
+                        <Icon
+                            icon="mdi:github"
+                            width="20"
+                            height="20"
+                            className="group-hover:text-accent transition-colors"
+                            client:load
+                        />
+                        <span class="font-mono text-sm">GitHub</span>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jose-elias-muyulema-punga%C3%B1a/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-2 px-4 py-2 rounded-md bg-bg-secondary border border-border text-text-secondary hover:text-text-primary hover:border-accent transition-all group"
+                    >
+                        <Icon
+                            icon="mdi:linkedin"
+                            width="20"
+                            height="20"
+                            className="group-hover:text-accent transition-colors"
+                            client:load
+                        />
+                        <span class="font-mono text-sm">LinkedIn</span>
+                    </a>
+                    <a
+                        href="/cv.pdf"
+                        download
+                        class="flex items-center gap-2 px-4 py-2 rounded-md bg-bg-secondary border border-border text-text-secondary hover:text-text-primary hover:border-accent transition-all group"
+                    >
+                        <Icon
+                            icon="mdi:file-document-outline"
+                            width="20"
+                            height="20"
+                            className="group-hover:text-accent transition-colors"
+                            client:load
+                        />
+                        <span class="font-mono text-sm">Download CV</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:block md:h-auto aspect-square shrink-0">
+                <img
+                    src="https://avatars.githubusercontent.com/u/129903903"
+                    alt="Profile Picture"
+                    class="w-full h-full object-cover rounded-full border-2 border-accent shadow-lg"
+                />
+            </div>
+        </div>
+
+        <p class="prose prose-invert max-w-none text-text-secondary text-lg">
+            I enjoy creating web pages and applications that are useful and attractive to users.
+        </p>
+
+        <Endpoint
+            client:load
+            method="GET"
+            path="/"
+            style={{ viewTransitionName: 'main-endpoint' } as any}
+        >
+            <div class="space-y-4">
+                <p class="text-sm text-text-secondary">Here you can see more aspects about me.</p>
+                <div>
+                    <CodeBlock
+                        client:load
+                        code={JSON.stringify(welcomeResponse, null, 4)}
+                        skillIcons={skillIcons}
+                    />
+                </div>
+            </div>
+        </Endpoint>
+    </div>
+</Layout>
