@@ -16,11 +16,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
         },
         {
             method: 'GET',
-            path: '/about',
-            label: 'About Me',
-        },
-        {
-            method: 'GET',
             path: '/projects',
             label: 'Projects',
         },
