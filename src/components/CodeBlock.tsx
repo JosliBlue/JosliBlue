@@ -83,7 +83,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) =
                     className="fixed z-50 px-3 py-2 bg-bg-primary border-2 border-accent rounded-lg shadow-xl pointer-events-none"
                     style={{
                         left: `${hoveredSkill.x}px`,
-                        top: `${hoveredSkill.y - 60}px`,
+                        top: `${hoveredSkill.y - 73}px`,
                         transform: 'translateX(-50%)',
                     }}
                 >
