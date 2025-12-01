@@ -12,7 +12,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
         {
             method: 'GET',
             path: '/',
-            label: 'Welcome',
+            label: 'About me',
         },
         {
             method: 'GET',
@@ -37,8 +37,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
         <>
             {!isMobile && (
                 <div className="p-6 border-b border-border">
-                    <h1 className="text-xl font-bold text-accent tracking-tight">JosliBlue Dev</h1>
-                    <p className="text-xs text-text-secondary mt-1">v1.0.0</p>
+                    <h1 className="text-xl font-bold text-accent tracking-tight">JosliBlue</h1>
                 </div>
             )}
 
@@ -85,6 +84,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
                     </ul>
                 </div>
             </nav>
+
+            {!isMobile && (
+                <div className="p-6 border-t border-border">
+                    <p className="text-xs text-text-secondary">Portfolio v1.0.0</p>
+                </div>
+            )}
         </>
     );
 
@@ -104,7 +109,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
             <button
                 type="button"
                 onClick={toggleMenu}
-                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={isMobileMenuOpen}
                 className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 p-4 rounded-full bg-accent text-bg-primary shadow-lg hover:scale-110 transition-transform duration-200"
             >

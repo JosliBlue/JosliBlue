@@ -3,6 +3,8 @@ import Layout from '../layouts/layout.astro';
 import { Endpoint } from '../components/Endpoint';
 import { CodeBlock } from '../components/CodeBlock';
 import { Icon } from '@iconify/react';
+import fs from 'fs';
+import path from 'path';
 
 const welcomeResponse = {
     username: 'JosliBlue',
@@ -15,7 +17,7 @@ const welcomeResponse = {
         frameworks: ['Spring', 'Laravel', 'Angular', 'Bootstrap', 'Tailwind'],
         databases: ['MySQL', 'PostgreSQL', 'Firebase'],
     },
-    hobbies: ['Shooting Games', 'Piano', 'Movies', 'Music'],
+    hobbies: ['Gaming', 'Piano', 'Movies', 'Music'],
 };
 
 const skillIcons = {
@@ -33,9 +35,39 @@ const skillIcons = {
     PostgreSQL: 'devicon:postgresql',
     Firebase: 'devicon:firebase',
 };
+
+// Escanear certificados automáticamente
+const certificatesPath = path.join(process.cwd(), 'public', 'certificates');
+let certificates: string[] = [];
+
+try {
+    const files = fs.readdirSync(certificatesPath);
+    certificates = files
+        .filter(file => file.endsWith('.pdf'))
+        .map(file => {
+            const name = file.replace('.pdf', '');
+            return name;
+        });
+} catch (error) {
+    console.error('Error reading certificates:', error);
+}
+
+const certificatesResponse = {
+    education: {
+        university: "Universidad Técnica de Ambato",
+        degree: "Software Engineering",
+    },
+    certificates: {
+        count: certificates.length,
+        items: certificates.map(cert => ({
+            name: cert,
+            url: `/certificates/${cert}.pdf`
+        }))
+    }
+};
 ---
 
-<Layout title="Welcome">
+<Layout title="About me">
     <div class="space-y-6">
         <div class="flex flex-col-reverse md:flex-row gap-6 items-center">
             <div class="flex-1">
@@ -115,7 +147,7 @@ const skillIcons = {
         <Endpoint
             client:load
             method="GET"
-            path="/"
+            path="/about-me"
             style={{ viewTransitionName: 'main-endpoint' } as any}
         >
             <div class="space-y-4">
@@ -125,6 +157,22 @@ const skillIcons = {
                         client:load
                         code={JSON.stringify(welcomeResponse, null, 4)}
                         skillIcons={skillIcons}
+                    />
+                </div>
+            </div>
+        </Endpoint>
+
+        <Endpoint
+            client:load
+            method="GET"
+            path="/my-learning"
+        >
+            <div class="space-y-4">
+                <p class="text-sm text-text-secondary">My education both professional and self-taught</p>
+                <div>
+                    <CodeBlock
+                        client:load
+                        code={JSON.stringify(certificatesResponse, null, 4)}
                     />
                 </div>
             </div>
