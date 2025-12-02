@@ -37,7 +37,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
         <>
             {!isMobile && (
                 <div className="p-6 border-b border-border">
-                    <h1 className="text-xl font-bold text-accent tracking-tight">JosliBlue</h1>
+                    <h1 className="text-xl font-bold text-accent tracking-tight">JosliBlue Dev</h1>
                 </div>
             )}
 
@@ -111,7 +111,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPath }) => {
                 onClick={toggleMenu}
                 aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={isMobileMenuOpen}
-                className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 p-4 rounded-full bg-accent text-bg-primary shadow-lg hover:scale-110 transition-transform duration-200"
+                className="md:hidden fixed bottom-3 left-1/2 -translate-x-1/2 z-50 p-4 rounded-full bg-accent text-bg-primary shadow-lg hover:scale-110 transition-transform duration-200"
             >
                 {isMobileMenuOpen ? (
                     <Icon icon="mdi:close" width="24" height="24" />

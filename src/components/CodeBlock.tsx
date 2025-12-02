@@ -29,7 +29,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) =
                             return `<span class="${cls}">"<a href="${content}" target="_blank" rel="noopener noreferrer" class="hover:underline inline-flex items-center gap-2">${content}<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bg-bg-secondary border border-border rounded p-0.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>"</span>`;
                         }
                         if (skillIcons[content]) {
-                            return `<span class="${cls} skill-item hover:text-accent cursor-help transition-colors underline decoration-[#4ade80]/30 decoration-1 underline-offset-2" data-skill="${content}">${match}</span>`;
+                            return `<span class="${cls} skill-item hover:text-accent cursor-help transition-colors underline decoration-[#4ade80]/50 decoration-1 underline-offset-2" data-skill="${content}">${match}</span>`;
                         }
                     }
                 } else if (/true|false/.test(match)) {
@@ -73,7 +73,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) =
                 onMouseMove={handleMouseMove}
                 onMouseLeave={() => setHoveredSkill(null)}
             >
-                <pre className="font-mono text-[13px] leading-6 text-text-primary/90 whitespace-pre-wrap break-all">
+                <pre className="font-mono text-[15px] leading-6 text-text-primary/90 whitespace-pre-wrap break-all">
                     <code dangerouslySetInnerHTML={{ __html: highlightJson(code) }} />
                 </pre>
             </div>
@@ -83,7 +83,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) =
                     className="fixed z-50 px-3 py-2 bg-bg-primary border-2 border-accent rounded-lg shadow-xl pointer-events-none"
                     style={{
                         left: `${hoveredSkill.x}px`,
-                        top: `${hoveredSkill.y - 73}px`,
+                        top: `${hoveredSkill.y - 72}px`,
                         transform: 'translateX(-50%)',
                     }}
                 >
