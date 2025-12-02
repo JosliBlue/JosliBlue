@@ -56,8 +56,8 @@ export const GET: APIRoute = async () => {
                                 nodes {
                                     ... on Repository {
                                         name
-                                        description
                                         url
+                                        description
                                         updatedAt
                                         languages(first: 3, orderBy: { field: SIZE, direction: DESC }) {
                                             nodes {
@@ -81,7 +81,7 @@ export const GET: APIRoute = async () => {
 
         const data: GitHubResponse = await response.json();
         
-        if (!data.data || !data.data.user) {
+        if (!data.data?.user) {
             throw new Error('Invalid response from GitHub API');
         }
         
@@ -98,55 +98,46 @@ export const GET: APIRoute = async () => {
                     }
                 );
                 
-                if (roleResponse.ok) {
-                    const text = await roleResponse.text();
-                    return text.trim();
-                }
-                return null;
+                return roleResponse.ok ? (await roleResponse.text()).trim() : null;
             } catch (e) {
                 console.error(`Error fetching blue.role for ${repoName}:`, e);
                 return null;
             }
         };
         
-        const projectsWithoutRole = data.data.user.pinnedItems.nodes
-            .map((repo) => {
-                let languages = repo.languages.nodes.map((lang) => lang.name);
-                
-                // Reemplazar PHP y Blade por Laravel
-                if (languages.includes('PHP') || languages.includes('Blade')) {
-                    languages = languages.filter(lang => lang !== 'PHP' && lang !== 'Blade');
-                    if (!languages.includes('Laravel')) {
-                        languages = ['Laravel', ...languages];
-                    }
-                }
+        // Normalizar lenguajes (reemplazar PHP/Blade por Laravel)
+        const normalizeLanguages = (languages: string[]): string[] => {
+            const hasPhpOrBlade = languages.some(lang => lang === 'PHP' || lang === 'Blade');
+            if (!hasPhpOrBlade) return languages;
+            
+            const filtered = languages.filter(lang => lang !== 'PHP' && lang !== 'Blade');
+            return filtered.includes('Laravel') ? filtered : ['Laravel', ...filtered];
+        };
+        
+        // Procesar repositorios y obtener roles en paralelo
+        const repos = data.data.user.pinnedItems.nodes
+            .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime());
+        
+        const projects = await Promise.all(
+            repos.map(async (repo) => {
+                const [role, languages] = await Promise.all([
+                    fetchBlueRole(repo.name),
+                    Promise.resolve(normalizeLanguages(repo.languages.nodes.map(l => l.name)))
+                ]);
                 
                 return {
                     name: repo.name,
-                    description: repo.description || 'No description available',
                     url: repo.url,
-                    lastUpdate: repo.updatedAt,
-                    languages: languages,
-                };
-            })
-            .sort((a, b) => new Date(b.lastUpdate).getTime() - new Date(a.lastUpdate).getTime());
-        
-        // Obtener el role para cada proyecto
-        const projects = await Promise.all(
-            projectsWithoutRole.map(async (project) => {
-                const role = await fetchBlueRole(project.name);
-                return {
-                    ...project,
+                    description: repo.description || 'No description available',
                     ...(role && { role }),
+                    languages,
                 };
             })
         );
 
-        // Preparar respuesta sin la fecha para el endpoint
+        // Preparar respuesta
         const projectsResponse = {
-            projects: [
-                ...projects.map(({ lastUpdate, ...project }) => project),  
-            ],
+            projects,
             more: {
                 description: "Want to see more of my work? Check out all my repositories on GitHub",
                 url: "https://github.com/JosliBlue?tab=repositories",
