@@ -85,7 +85,31 @@ export const GET: APIRoute = async () => {
             throw new Error('Invalid response from GitHub API');
         }
         
-        const projects = data.data.user.pinnedItems.nodes
+        // Función para obtener el contenido de blue.role
+        const fetchBlueRole = async (repoName: string): Promise<string | null> => {
+            try {
+                const roleResponse = await fetch(
+                    `https://api.github.com/repos/JosliBlue/${repoName}/contents/blue.role`,
+                    {
+                        headers: {
+                            'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                            'Accept': 'application/vnd.github.v3.raw',
+                        },
+                    }
+                );
+                
+                if (roleResponse.ok) {
+                    const text = await roleResponse.text();
+                    return text.trim();
+                }
+                return null;
+            } catch (e) {
+                console.error(`Error fetching blue.role for ${repoName}:`, e);
+                return null;
+            }
+        };
+        
+        const projectsWithoutRole = data.data.user.pinnedItems.nodes
             .map((repo) => {
                 let languages = repo.languages.nodes.map((lang) => lang.name);
                 
@@ -106,6 +130,17 @@ export const GET: APIRoute = async () => {
                 };
             })
             .sort((a, b) => new Date(b.lastUpdate).getTime() - new Date(a.lastUpdate).getTime());
+        
+        // Obtener el role para cada proyecto
+        const projects = await Promise.all(
+            projectsWithoutRole.map(async (project) => {
+                const role = await fetchBlueRole(project.name);
+                return {
+                    ...project,
+                    ...(role && { role }),
+                };
+            })
+        );
 
         // Preparar respuesta sin la fecha para el endpoint
         const projectsResponse = {
