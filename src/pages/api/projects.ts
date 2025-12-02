@@ -92,7 +92,6 @@ export const GET: APIRoute = async () => {
                     `https://api.github.com/repos/JosliBlue/${repoName}/contents/blue.role`,
                     {
                         headers: {
-                            'Authorization': `Bearer ${GITHUB_TOKEN}`,
                             'Accept': 'application/vnd.github.v3.raw',
                         },
                     }
