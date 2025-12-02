@@ -3,6 +3,7 @@ import Layout from '../layouts/layout.astro';
 import { Endpoint } from '../components/Endpoint';
 import { CodeBlock } from '../components/CodeBlock';
 import { Icon } from '@iconify/react';
+import { iconMapper } from '../utils/iconMapper';
 import fs from 'fs';
 import path from 'path';
 
@@ -18,22 +19,6 @@ const welcomeResponse = {
         databases: ['MySQL', 'PostgreSQL', 'Firebase'],
     },
     hobbies: ['Gaming', 'Piano', 'Movies', 'Music'],
-};
-
-const skillIcons = {
-    Java: 'devicon:java',
-    PHP: 'devicon:php',
-    JavaScript: 'devicon:javascript',
-    TypeScript: 'devicon:typescript',
-    Python: 'devicon:python',
-    Spring: 'devicon:spring',
-    Laravel: 'devicon:laravel',
-    Angular: 'devicon:angular',
-    Bootstrap: 'devicon:bootstrap',
-    Tailwind: 'devicon:tailwindcss',
-    MySQL: 'devicon:mysql',
-    PostgreSQL: 'devicon:postgresql',
-    Firebase: 'devicon:firebase',
 };
 
 // Escanear certificados automáticamente
@@ -155,8 +140,8 @@ const certificatesResponse = {
                 <div>
                     <CodeBlock
                         client:load
-                        code={JSON.stringify(welcomeResponse, null, 4)}
-                        skillIcons={skillIcons}
+                        code={JSON.stringify(welcomeResponse, null, 2)}
+                        skillIcons={iconMapper}
                     />
                 </div>
             </div>
@@ -172,7 +157,7 @@ const certificatesResponse = {
                 <div>
                     <CodeBlock
                         client:load
-                        code={JSON.stringify(certificatesResponse, null, 4)}
+                        code={JSON.stringify(certificatesResponse, null, 2)}
                     />
                 </div>
             </div>
