@@ -142,58 +142,6 @@ Outside tech, 🎮 I enjoy playing shooting games, 🎹 practicing the piano, �
 
 <br>
 
-<!--------------------------- PINS --------------------------->
-## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OXR5MjgzNDJxcjY0cnZoNXBqaTFtaGkxN2hiZXluZ2t6N24zaWFlNCZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/6ttH5uPd5F4MQFSjXh/giphy.gif" width = 35px></picture> Pins
-
-<div align="center">
-<a href="https://github.com/JosliBlue/espacios_cca_backend">
-    <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=espacios_cca_backend&theme=github_dark&description_lines_count=2" media="(prefers-color-scheme: dark)"
-        />
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=espacios_cca_backend&description_lines_count=2" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=espacios_cca_backend" alt="GitHub Repo espacios_cca_backend" />
-    </picture>
-</a>
-<a href="https://github.com/JosliBlue/Proformax">
-    <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=Proformax&theme=github_dark&description_lines_count=2" media="(prefers-color-scheme: dark)"
-        />
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=Proformax&description_lines_count=2" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=Proformax" alt="GitHub Repo Proformax" />
-    </picture>
-</a>
-<a href="https://github.com/JosliBlue/twodrive_backend">
-    <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=twodrive_backend&theme=github_dark&description_lines_count=2" media="(prefers-color-scheme: dark)"
-        />
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=twodrive_backend&description_lines_count=2" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=twodrive_backend" alt="GitHub Repo twodrive_backend" />
-    </picture>
-</a>
-<a href="https://github.com/JosliBlue/cineriesbox">
-    <picture>
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=cineriesbox&theme=github_dark&description_lines_count=2" media="(prefers-color-scheme: dark)"
-        />
-        <source
-            srcset="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=cineriesbox&description_lines_count=2" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=JosliBlue&repo=cineriesbox" alt="GitHub Repo cineriesbox" />
-    </picture>
-</a>
-</div>
-
-<br>
-
 <!------------------------- MUSIQUITA ------------------------>
 <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 <div align="center">
