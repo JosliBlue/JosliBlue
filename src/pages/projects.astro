@@ -39,7 +39,7 @@ const moreData = {
             <div class="space-y-4">
                 <p class="text-sm text-text-secondary">Want to see more of my work? Check out all my repositories on GitHub</p>
                 <div>
-                    <CodeBlock client:load code={JSON.stringify(moreData, null, 2)} />
+                    <CodeBlock client:load code={JSON.stringify(moreData, null, 2)} statusCode={200} />
                 </div>
             </div>
         </Endpoint>

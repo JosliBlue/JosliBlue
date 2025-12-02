@@ -4,9 +4,10 @@ import { Icon } from '@iconify/react';
 interface CodeBlockProps {
     code: string;
     skillIcons?: Record<string, string>;
+    statusCode?: number;
 }
 
-export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) => {
+export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {}, statusCode = 200 }) => {
     const [hoveredSkill, setHoveredSkill] = useState<{ name: string; x: number; y: number } | null>(
         null
     );
@@ -63,8 +64,16 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) =
         <div className="rounded-md overflow-hidden border border-(--code-border) bg-(--bg-code) my-6 shadow-sm group relative">
             <div className="flex justify-end items-center px-4 py-2 bg-(--code-header-bg) border-b border-(--code-border)">
                 <div className="flex items-center gap-2">
-                    <span className="text-xs text-text-secondary font-mono font-medium tracking-tight">
-                        200 OK
+                    <span className={`text-xs font-mono font-medium tracking-tight ${
+                        statusCode >= 200 && statusCode < 300
+                            ? 'text-green-400'
+                            : statusCode >= 400 && statusCode < 500
+                            ? 'text-yellow-400'
+                            : statusCode >= 500
+                            ? 'text-red-400'
+                            : 'text-text-secondary'
+                    }`}>
+                        {statusCode} {statusCode === 200 ? 'OK' : statusCode === 400 ? 'Bad Request' : statusCode === 500 ? 'Internal Server Error' : statusCode === 502 ? 'Bad Gateway' : 'Error'}
                     </span>
                 </div>
             </div>

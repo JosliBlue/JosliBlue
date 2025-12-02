@@ -1,5 +1,18 @@
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
+import { CodeBlock } from './CodeBlock';
+
+interface SuccessResponse {
+    name: string;
+    email: string;
+    message: string;
+    timestamp: string;
+}
+
+interface ErrorResponse {
+    error: string;
+    statusCode: number;
+}
 
 export const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -8,7 +21,8 @@ export const ContactForm = () => {
         message: ''
     });
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
-    const [errorMessage, setErrorMessage] = useState('');
+    const [successData, setSuccessData] = useState<SuccessResponse | null>(null);
+    const [errorData, setErrorData] = useState<ErrorResponse | null>(null);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({
@@ -20,7 +34,8 @@ export const ContactForm = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('sending');
-        setErrorMessage('');
+        setSuccessData(null);
+        setErrorData(null);
 
         try {
             const response = await fetch('/api/contact', {
@@ -33,16 +48,37 @@ export const ContactForm = () => {
 
             if (response.ok) {
                 setStatus('success');
+                setSuccessData({
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                    timestamp: new Date().toISOString()
+                });
                 setFormData({ name: '', email: '', message: '' });
-                setTimeout(() => setStatus('idle'), 5000);
             } else {
-                const data = await response.json();
+                // Intentar parsear el error del servidor
+                let errorMessage = 'Error sending message';
+                try {
+                    const data = await response.json();
+                    errorMessage = data.error || errorMessage;
+                } catch {
+                    // Si no se puede parsear el JSON, usar el statusText
+                    errorMessage = response.statusText || errorMessage;
+                }
+                
                 setStatus('error');
-                setErrorMessage(data.error || 'Error sending message');
+                setErrorData({
+                    error: errorMessage,
+                    statusCode: response.status
+                });
             }
         } catch (error) {
+            // Error de red o de conexión
             setStatus('error');
-            setErrorMessage('Error connecting to server');
+            setErrorData({
+                error: error instanceof Error ? error.message : 'Network error: Unable to connect to server',
+                statusCode: 500
+            });
         }
     };
 
@@ -114,18 +150,30 @@ export const ContactForm = () => {
                 )}
             </button>
 
-            {status === 'success' && (
-                <div className="p-4 rounded-md bg-green-500/10 border border-green-500/50 text-green-400 flex items-center gap-2">
-                    <Icon icon="mdi:check-circle" width="20" height="20" />
-                    <span>Message sent successfully!</span>
-                </div>
+            {status === 'success' && successData && (
+                <CodeBlock
+                    statusCode={200}
+                    code={JSON.stringify({
+                        status: "success",
+                        data: {
+                            name: successData.name,
+                            email: successData.email,
+                            message: successData.message,
+                            sentAt: successData.timestamp
+                        }
+                    }, null, 2)}
+                />
             )}
 
-            {status === 'error' && (
-                <div className="p-4 rounded-md bg-red-500/10 border border-red-500/50 text-red-400 flex items-center gap-2">
-                    <Icon icon="mdi:alert-circle" width="20" height="20" />
-                    <span>{errorMessage}</span>
-                </div>
+            {status === 'error' && errorData && (
+                <CodeBlock
+                    statusCode={errorData.statusCode}
+                    code={JSON.stringify({
+                        error: errorData.error,
+                        statusCode: errorData.statusCode,
+                        timestamp: new Date().toISOString()
+                    }, null, 2)}
+                />
             )}
         </form>
     );

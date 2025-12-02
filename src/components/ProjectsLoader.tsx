@@ -19,14 +19,18 @@ export const ProjectsLoader: React.FC = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [projectsResponse, setProjectsResponse] = useState<ProjectsResponse | null>(null);
+    const [statusCode, setStatusCode] = useState<number>(200);
 
     useEffect(() => {
         const fetchProjects = async () => {
             try {
                 const response = await fetch('/api/projects');
                 
+                setStatusCode(response.status);
+                
                 if (!response.ok) {
-                    throw new Error(`API error: ${response.statusText}`);
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || `API error: ${response.statusText}`);
                 }
 
                 const data = await response.json();
@@ -52,9 +56,14 @@ export const ProjectsLoader: React.FC = () => {
 
     if (error) {
         return (
-            <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400">
-                <p className="font-mono text-sm">Error loading projects: {error}</p>
-            </div>
+            <CodeBlock
+                statusCode={statusCode}
+                code={JSON.stringify({
+                    error: error,
+                    statusCode: statusCode,
+                    timestamp: new Date().toISOString()
+                }, null, 2)}
+            />
         );
     }
 
@@ -71,6 +80,7 @@ export const ProjectsLoader: React.FC = () => {
                 <CodeBlock
                     code={JSON.stringify(projectsResponse, null, 2)}
                     skillIcons={iconMapper}
+                    statusCode={statusCode}
                 />
             </div>
         </div>

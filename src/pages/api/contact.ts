@@ -43,7 +43,7 @@ export const POST: APIRoute = async ({ request }) => {
 
         // Enviar correo
         try {
-            await resend.emails.send({
+            const result = await resend.emails.send({
                 from: 'Portfolio Contact <onboarding@resend.dev>', // Dominio verificado de Resend
                 to: CONTACT_EMAIL,
                 replyTo: email,
@@ -56,10 +56,23 @@ export const POST: APIRoute = async ({ request }) => {
                     <p>${message.replace(/\n/g, '<br/>')}</p>
                 `,
             });
+
+            // Verificar si Resend devolvió un error
+            if (result.error) {
+                console.error('Resend API error:', result.error);
+                return new Response(
+                    JSON.stringify({ 
+                        error: `Resend API error: ${result.error.message || 'Unknown error'}` 
+                    }),
+                    { status: 502, headers: { 'Content-Type': 'application/json' } }
+                );
+            }
         } catch (sendErr: any) {
             console.error('Resend error:', sendErr);
             return new Response(
-                JSON.stringify({ error: `Error sending email: ${sendErr.message}` }),
+                JSON.stringify({ 
+                    error: `Error sending email: ${sendErr.message || sendErr.toString()}` 
+                }),
                 { status: 502, headers: { 'Content-Type': 'application/json' } }
             );
         }
