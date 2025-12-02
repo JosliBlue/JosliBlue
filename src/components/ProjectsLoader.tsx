@@ -7,6 +7,7 @@ interface Project {
     name: string;
     description: string;
     url: string;
+    role?: string;
     languages: string[];
 }
 

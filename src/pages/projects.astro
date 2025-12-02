@@ -2,6 +2,12 @@
 import Layout from '../layouts/layout.astro';
 import { Endpoint } from '../components/Endpoint';
 import { ProjectsLoader } from '../components/ProjectsLoader';
+import { CodeBlock } from '../components/CodeBlock';
+
+const moreData = {
+    message: "Redirecting to GitHub repositories...",
+    url: "https://github.com/JosliBlue?tab=repositories",
+};
 ---
 
 <Layout title="Projects">
@@ -20,6 +26,22 @@ import { ProjectsLoader } from '../components/ProjectsLoader';
             style={{ viewTransitionName: 'main-endpoint' } as any}
         >
             <ProjectsLoader client:load />
+        </Endpoint>
+
+        <Endpoint
+            client:load
+            method="GET"
+            path="/more-repositories"
+            style={{ viewTransitionName: 'second-endpoint' } as any}
+        >
+
+            
+            <div class="space-y-4">
+                <p class="text-sm text-text-secondary">Want to see more of my work? Check out all my repositories on GitHub</p>
+                <div>
+                    <CodeBlock client:load code={JSON.stringify(moreData, null, 2)} />
+                </div>
+            </div>
         </Endpoint>
     </div>
 </Layout>

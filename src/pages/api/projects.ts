@@ -93,6 +93,7 @@ export const GET: APIRoute = async () => {
                     {
                         headers: {
                             'Accept': 'application/vnd.github.v3.raw',
+                            'Authorization': `Bearer ${GITHUB_TOKEN}`,
                         },
                     }
                 );
@@ -137,10 +138,6 @@ export const GET: APIRoute = async () => {
         // Preparar respuesta
         const projectsResponse = {
             projects,
-            more: {
-                description: "Want to see more of my work? Check out all my repositories on GitHub",
-                url: "https://github.com/JosliBlue?tab=repositories",
-            }
         };
 
         return new Response(JSON.stringify(projectsResponse), {
