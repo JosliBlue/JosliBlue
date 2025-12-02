@@ -73,7 +73,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, skillIcons = {} }) =
                 onMouseMove={handleMouseMove}
                 onMouseLeave={() => setHoveredSkill(null)}
             >
-                <pre className="font-mono text-[15px] leading-6 text-text-primary/90 whitespace-pre-wrap break-words">
+                <pre className="font-mono text-[15px] leading-6 text-text-primary/90 whitespace-pre-wrap wrap-break-word">
                     <code dangerouslySetInnerHTML={{ __html: highlightJson(code) }} />
                 </pre>
             </div>
