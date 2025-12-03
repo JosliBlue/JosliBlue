@@ -56,3 +56,6 @@ pnpm-debug.log*
 
 # Static generators
 /.parcel-cache
+
+# Local Netlify folder
+.netlify
