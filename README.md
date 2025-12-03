@@ -21,15 +21,11 @@
     <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 225px>
 </picture>
 
-As an undergraduate Software Engineering student, I love learning and creating new, productive, innovative, and meaningful things.
+I was born in 2003, and I'm a backend web developer who enjoys building well-structured, reliable, and maintainable systems. 💻✨. Specialize in PHP, Laravel, and MySQL ⚙️, and I'm particularly interested in creating clean and scalable API architectures.
 
-My interests are strongly aligned with web development—especially backend architecture—and building useful, impactful software solutions.
+I also have frontend knowledge and keep learning a little more every day to become a more well-rounded developer 📚.
 
-🌱 I’m currently learning ...
-  - Mobile app development  
-  - Docker  
-
-Outside tech, 🎮 I enjoy playing shooting games, 🎹 practicing the piano, 🎬 watching movies, and 🎵 listening to music.
+Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹, watching movies 🎬, and discovering new music 🎵
 
 <br>
 

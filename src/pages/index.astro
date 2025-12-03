@@ -28,8 +28,8 @@ let certificates: string[] = [];
 try {
     const files = fs.readdirSync(certificatesPath);
     certificates = files
-        .filter(file => file.endsWith('.pdf'))
-        .map(file => {
+        .filter((file) => file.endsWith('.pdf'))
+        .map((file) => {
             const name = file.replace('.pdf', '');
             return name;
         });
@@ -39,16 +39,16 @@ try {
 
 const certificatesResponse = {
     education: {
-        university: "Universidad Técnica de Ambato",
-        degree: "Software Engineering",
+        university: 'Universidad Técnica de Ambato',
+        degree: 'Software Engineering',
     },
     certificates: {
         count: certificates.length,
-        items: certificates.map(cert => ({
+        items: certificates.map((cert) => ({
             name: cert,
-            url: `/certificates/${cert}.pdf`
-        }))
-    }
+            url: `/certificates/${cert}.pdf`,
+        })),
+    },
 };
 ---
 
@@ -58,15 +58,18 @@ const certificatesResponse = {
             <div class="flex-1">
                 <h1 class="text-4xl font-extrabold text-text-primary mb-5">Hello World!</h1>
                 <div class="prose prose-invert max-w-none text-text-secondary text-lg mb-6">
-                    <p class="mb-3">
-                        I'm José! or also <span class="text-accent font-mono">JosliBlue</span>. I
-                        started programming in high school when I was 16 years old and currently I
-                        have focused on Backend development.
+                    <p>
+                        I'm José, or also <span class="text-accent font-mono">JosliBlue</span>. I
+                        was born in 2003, and I'm a backend web developer who enjoys building
+                        well-structured, reliable, and maintainable systems.
                     </p>
                     <p>
-                        One of my recent jobs was at an institution in my city, where I worked
-                        together with colleagues to facilitate access to culture and art through
-                        technological solutions.
+                        I specialize in PHP, Laravel, and MySQL, and I'm particularly interested in
+                        creating clean and scalable API architectures.
+                    </p>
+                    <p>
+                        I also have frontend knowledge and keep learning a little more every day to
+                        become a more well-rounded developer.
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-3">
@@ -125,10 +128,6 @@ const certificatesResponse = {
             </div>
         </div>
 
-        <p class="prose prose-invert max-w-none text-text-secondary text-lg">
-            I enjoy creating web pages and applications that are useful and attractive to users.
-        </p>
-
         <Endpoint
             client:load
             method="GET"
@@ -155,7 +154,9 @@ const certificatesResponse = {
             style={{ viewTransitionName: 'second-endpoint' } as any}
         >
             <div class="space-y-4">
-                <p class="text-sm text-text-secondary">My education both professional and self-taught</p>
+                <p class="text-sm text-text-secondary">
+                    My education both professional and self-taught
+                </p>
                 <div>
                     <CodeBlock
                         client:load
