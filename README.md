@@ -1,8 +1,9 @@
 <!-------------------------- TITULO -------------------------->
 <div align="center">
     <h1>
-        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height="25" align="middle">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height="25">
         <b>Hi, I'm JosliBlue</b>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height="25">
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajgxbnp5aGR0N245ejA5MThiMm41d2h3MTQ4ZXk2ajRnZzFrdXB4MyZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Sq6sYNK1y55PMvkP23/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bWg3YW56MGNybTk4aW5obDVhdGVyMzdpMjVpaWh4NWI2MDN2aXhvbiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Ofjb0WbjmAX0OZR5Kb/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MnkxYmg3emQzYzlydzhuYW5qaTR0bXZ0YWV1NGpwN2Y5ZHR2bWhydSZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/CnTsZWcgk60rLoTT4m/giphy.gif -->
