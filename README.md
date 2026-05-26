@@ -1,23 +1,21 @@
 <!-------------------------- TITULO -------------------------->
 <div align="center">
     <h1>
-        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height=25>
-        <b>Hi , I'm JosliBlue</b>
-        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height=25>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height="25" align="middle">
+        <b>Hi, I'm JosliBlue</b>
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajgxbnp5aGR0N245ejA5MThiMm41d2h3MTQ4ZXk2ajRnZzFrdXB4MyZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Sq6sYNK1y55PMvkP23/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bWg3YW56MGNybTk4aW5obDVhdGVyMzdpMjVpaWh4NWI2MDN2aXhvbiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Ofjb0WbjmAX0OZR5Kb/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MnkxYmg3emQzYzlydzhuYW5qaTR0bXZ0YWV1NGpwN2Y5ZHR2bWhydSZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/CnTsZWcgk60rLoTT4m/giphy.gif -->
-        <!-- https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif -->
+        <!-- https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OTE4Y3Zvdjl5c3h5aXVxcmlnbHhwNmJya2NicjdjMjlidDRqN25iciZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/TeNKr9lmwCdfTQv1Ad/giphy.gif -->
     </h1>
 </div>
-
 <div align="center" style="width: 100%; max-width: 100%;">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&center=true&lines=Backend+Developer;Software+Engineer;Competitive+Programmer;Always+learning+new+things" alt="Typing SVG" style="width: 100%; max-width: 100%; height: 50px;">
 </div>
 
 <!------------------------- ABOUT ME ------------------------->
-## <picture><img src = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJ4NDcxM21iZjMzY3JzeDVyYjE3YzZmeGd4Y2pqM3I5b3J1cm1sMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Y0v4Iiyl36ZH0ogytI/giphy.gif" width=30px></picture> About me
+## <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJ4NDcxM21iZjMzY3JzeDVyYjE3YzZmeGd4Y2pqM3I5b3J1cm1sMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Y0v4Iiyl36ZH0ogytI/giphy.gif" width="30" align="absmiddle"> About me
 
 <picture>
     <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 225px>
@@ -32,7 +30,7 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
 <br>
 
 <!--------------------- SKILLS AND TOOLS --------------------->
-## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d25nMzdtOXNxcjRuYjZvbWJtZDc5d2VweGU4ZG45MmlnMGExYTZqbiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/q9jwUVBtAshCCrLxkL/giphy.gif" width = 35px></picture> Skills & Tools
+## <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d25nMzdtOXNxcjRuYjZvbWJtZDc5d2VweGU4ZG45MmlnMGExYTZqbiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/q9jwUVBtAshCCrLxkL/giphy.gif" width="35" align="absmiddle"> Skills & Tools
 
 <table align="center">
     <tr>
@@ -90,7 +88,7 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
 <br>
 
 <!--------------------------- STATS -------------------------->
-## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZGhxNnBwdm9sajE3bGcxdGFhYTR6d3ZuZmQyNDBmOGk5aGNodzByMiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Dzb7MRwMuV9xOnywTx/giphy.gif" width = 30px></picture> Stats
+## <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZGhxNnBwdm9sajE3bGcxdGFhYTR6d3ZuZmQyNDBmOGk5aGNodzByMiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Dzb7MRwMuV9xOnywTx/giphy.gif" width="30" align="absmiddle"> Stats
 
 <div align="center">
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=JosliBlue&theme=github_dark" />
@@ -102,7 +100,7 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
 
 
 <!------------------------- PARTNERS ------------------------->
-## <picture><img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d25nMzdtOXNxcjRuYjZvbWJtZDc5d2VweGU4ZG45MmlnMGExYTZqbiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/3n1O5MZSrfeQR7EkoS/giphy.gif" width = 35px></picture> Partners
+## <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d25nMzdtOXNxcjRuYjZvbWJtZDc5d2VweGU4ZG45MmlnMGExYTZqbiZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/3n1O5MZSrfeQR7EkoS/giphy.gif" width="35" align="absmiddle"> Partners
 
 <div align="center">
 <table>
@@ -139,7 +137,7 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
 <br>
 
 <!------------------- FEATURED PROJECTS ---------------------->
-## <picture><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajFuaXZhaTlsdXd4NDN1ZWRuMGhhdzB2M2NmOGF3enpqYnpyaHhpciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/XTi9ZSuSX2sSLULBKf/giphy.gif" width = 35px></picture> Featured Projects
+## <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajFuaXZhaTlsdXd4NDN1ZWRuMGhhdzB2M2NmOGF3enpqYnpyaHhpciZlcD12MV9pbnRlcm5hbF9naWZfaWQmY3Q9cw/XTi9ZSuSX2sSLULBKf/giphy.gif" width="35" align="absmiddle"> Featured Projects
 
 <div align="center">
     <p><b><img src="https://img.icons8.com/fluency/48/down.png" width="22" align="center"> Feel free to check out some of my pinned projects down below! <img src="https://img.icons8.com/fluency/48/down.png" width="22" align="center"></b></p>
