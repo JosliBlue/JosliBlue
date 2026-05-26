@@ -1,12 +1,14 @@
 <!-------------------------- TITULO -------------------------->
 <div align="center">
     <h1>
-        <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajgxbnp5aGR0N245ejA5MThiMm41d2h3MTQ4ZXk2ajRnZzFrdXB4MyZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Sq6sYNK1y55PMvkP23/giphy.gif" height=25>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height=25>
+        <b>Hi , I'm JosliBlue</b>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif" height=25>
+        <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajgxbnp5aGR0N245ejA5MThiMm41d2h3MTQ4ZXk2ajRnZzFrdXB4MyZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/Sq6sYNK1y55PMvkP23/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bWg3YW56MGNybTk4aW5obDVhdGVyMzdpMjVpaWh4NWI2MDN2aXhvbiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Ofjb0WbjmAX0OZR5Kb/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MnkxYmg3emQzYzlydzhuYW5qaTR0bXZ0YWV1NGpwN2Y5ZHR2bWhydSZlcD12MV9zdGlja2Vyc19yZWxhdGVkJmN0PXM/CnTsZWcgk60rLoTT4m/giphy.gif -->
         <!-- https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtmc2szNDkyNGxpMmh2amozamlud2V0aHE4ejhiMTNjMmd2cXpldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tW5FDeH9jSkdWL3Asp/giphy.gif -->
         <!-- https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OTE4Y3Zvdjl5c3h5aXVxcmlnbHhwNmJya2NicjdjMjlidDRqN25iciZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/TeNKr9lmwCdfTQv1Ad/giphy.gif -->
-        <b>Hi , I'm JosliBlue</b>
     </h1>
 </div>
 
@@ -21,7 +23,7 @@
     <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 225px>
 </picture>
 
-I was born in 2003, and I'm a backend web developer who enjoys building well-structured, reliable, and maintainable systems. 💻✨. Specialize in PHP, Laravel, and MySQL ⚙️, and I'm particularly interested in creating clean and scalable API architectures.
+I was born in 2003, and I'm a backend web developer who enjoys building well-structured, reliable, and maintainable systems. 💻✨. Specialize in PHP, Laravel, and SQL BD's ⚙️, and I'm particularly interested in creating clean and scalable API architectures.
 
 I also have frontend knowledge and keep learning a little more every day to become a more well-rounded developer 📚.
 
@@ -53,8 +55,7 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=spring" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=laravel" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=angular" />
-            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=bootstrap" />
-            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=tailwind" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=astro" />
         </td>
     </tr>
     <tr>
@@ -73,10 +74,9 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
                 Other Tools
             </p>
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=vscode" />
-            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=idea" />
-            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=pycharm" />
-            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=git" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=postman" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=bootstrap" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=tailwind" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=docker" />
         </td>
     </tr>
@@ -138,12 +138,9 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
 
 <br>
 
-<!------------------------- MUSIQUITA ------------------------>
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+<!------------------- FEATURED PROJECTS ---------------------->
+## <picture><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajFuaXZhaTlsdXd4NDN1ZWRuMGhhdzB2M2NmOGF3enpqYnpyaHhpciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/XTi9ZSuSX2sSLULBKf/giphy.gif" width = 35px></picture> Featured Projects
+
 <div align="center">
-<p>🎵 My music world 🎵</p>
-
-![](https://spotify-recently-played-readme.vercel.app/api?user=31asz5gxxtwsd7txocs3p2vbelwm&count=3)
-
+    <p><b><img src="https://img.icons8.com/fluency/48/down.png" width="22" align="center"> Feel free to check out some of my pinned projects down below! <img src="https://img.icons8.com/fluency/48/down.png" width="22" align="center"></b></p>
 </div>
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
