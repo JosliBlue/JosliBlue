@@ -39,10 +39,10 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Languages
             </p>
-            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=java" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=php" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=js" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=ts" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=java" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=python" />
         </td>
     </tr>
@@ -51,10 +51,10 @@ Outside of programming, I enjoy playing video games 🎮, practicing piano 🎹,
             <p style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">
                 Frameworks
             </p>
-            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=spring" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=laravel" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=angular" />
             <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=astro" />
+            <img height="60" style="pointer-events: none;" src="https://skillicons.dev/icons?i=spring" />
         </td>
     </tr>
     <tr>
